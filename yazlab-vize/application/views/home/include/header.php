@@ -136,7 +136,7 @@
         #harita {
             border-style: solid;
             border-width: 2px;
-            border-color: #000000;
+            border-color: red;
             border-radius: 10px;
         }
     </style>
@@ -167,9 +167,7 @@
 </head>
 
 <body>
-    <?php
-    session_start();
-    ?>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSMS76N" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -194,32 +192,21 @@
                                     <a class="header-link" href="<?php echo base_url() ?>home/index">Ana Sayfa</a>
                                 </li>
                                 <li class="list-items">
-                                    <a class="header-link" href="<?php echo base_url() ?>home/gallery">Bilet Al</a>
+                                    <a class="header-link" href="<?php echo base_url() ?>home/seferler">Bilet Al</a>
                                 </li>
                                 <li class="list-items">
                                     <a class="header-link" href="<?php echo base_url() ?>home/about">Hakkımızda</a>
                                 </li>
-                                <li class="list-items">
-                                    <a class="header-link" href="<?php echo base_url() ?>home/amenities">Yardım</a>
-                                </li>
+
                                 <li class="list-items">
                                     <a class="header-link" href="<?php echo base_url() ?>home/contacts">İletişim</a>
                                 </li>
-
-                            </ul>
-                            <div class="vertical"></div>
-
-                            <?php
-
-                            if (isset($_SESSION['giris']) && $_SESSION['giris'] == true) { ?>
                                 <button class="head-btn"
                                     onclick="window.location.href ='<?php echo base_url() ?>home/account'">
                                     Hesabım
                                 </button>
-                            <?php } else { ?>
-
                                 <button class="head-btn"
-                                    onclick="window.location.href ='<?php echo base_url() ?>home/login'">
+                                    onclick="window.location.href ='<?php echo base_url() ?>login'">
                                     Giriş
                                 </button>
 
@@ -227,8 +214,8 @@
                                     onclick="window.location.href = '<?php echo base_url() ?>/home/register'">
                                     Kayıt Ol
                                 </button>
-                                <?php
-                            } ?>
+
+                            </ul>
 
                         </div>
 

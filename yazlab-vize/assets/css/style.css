@@ -48,16 +48,16 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap');
 
 :root {
-    --primary-color: #4b81b0;
+    --primary-color: #FBB03B;
     --accent-color: #3D3B9C;
     --secondary-color: #FEFBF6;
     --black: #000;
     --white: #fff;
     --text-color: #2C333D;
     --footer-bg: #EAE8F3;
-    --button-bg-hover: #273f60;
+    --button-bg-hover: #2C333D;
     --light-grey: #EFEEF3;
-    --dark-grey: #8b8888;
+    --dark-grey: #cccccc;
 }
 
 html{
@@ -1989,6 +1989,7 @@ input[type=text] {
 }
 
 #right-room-col > button:hover {
+    border: 2px solid var(--primary-color);
     color: var(--white);
 }
 
